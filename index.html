@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Burger Builder</title>
+</head>
+
+<body>
+
+  <h1>Burger Builder</h1>
+
+  <div class="burger-container">
+
+    <div class="buttons">
+      <table class="buttons-table" cellpadding=3>
+        <tr>
+          <td><button class="buttons-table" onclick="removeMeet()">-</button></td>
+          <td><img class="buttons-table" src="./images/meet-removebg-preview.png" alt="meetImages"></td>
+          <td><button class="buttons-table" onclick="addMeet()">+</button></td>
+        </tr>
+        <tr>
+          <td><button class="buttons-table" onclick="removeLettuce()">-</button></td>
+          <td><img class="buttons-table" src="./images/lettuce-removebg-preview.png" alt="lettuceImages"></td>
+          <td><button class="buttons-table" onclick="addLettuce()">+</button></td>
+        </tr>
+        <tr>
+          <td><button class="buttons-table" onclick="removeEgg()">-</button></td>
+          <td><img class="buttons-table" src="./images/egg-removebg-preview.png" alt="eggImages"></td>
+          <td><button class="buttons-table" onclick="addEgg()">+</button></td>
+          </td>
+        <tr>
+          <td><button class="buttons-table" onclick="removeOnion()">-</button></td>
+          <td><img class="buttons-table" src="./images/onion-removebg-preview.png" alt="onionImages"></td>
+          <td> <button class="buttons-table" onclick="addOnion()">+</button></td>
+        </tr>
+      </table>
+    </div>
+    <div class="ingidients">
+      <img src="./images/top-removebg-preview.png" alt="bun top">
+      <div id="meetImages" class="meetImages"></div>
+      <div id="lettuceImages" class="lettuceImages"></div>
+      <div id="eggImages"></div>
+      <div id="onionImages" class="onionImages"></div>
+
+      <img src="./images/button-removebg-preview.png" alt="bun bottom">
+    </div>
+    <div class="control-container">
+      <p>Total price is <span id="totalPrice">10</span>$</p>
+      <button class="buttonPaymentDetails" onclick="PaymentDetails()">Payment details</button>
+      <p><span id="PaymentDetailsId"></span></p>
+      <p><span id="lettuceId"></span></p>
+      <p><span id="eggId"></span></p>
+      <p><span id="onionId"></span></p>
+      <div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

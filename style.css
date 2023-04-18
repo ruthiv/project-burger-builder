@@ -1,0 +1,98 @@
+
+body {
+  background-color: transparent;
+}
+.burger-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  color: rgb(145, 91, 49);
+  
+}
+.ingidients > .meetImages, .lettuceImages , #eggImages , .onionImages{
+  background-color: transparent;
+  margin-right: 10px;
+  margin-bottom: -15px;
+  position:relative; 
+}
+
+img {
+  width: 250px;
+  margin-top: -10px;
+}
+h1 {
+  text-align: center;
+  font-style: italic;
+  color: rgb(145, 91, 49);
+  font-size: 45px;
+  font-weight: bold;
+  
+}
+
+.burger-container .control-container{
+grid-column: span 3;
+height: 88%;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+text-align: center;
+text-align: center;
+font-size: larger;
+}
+
+button {
+margin-block: 30px;
+font-size: larger;
+color: rgb(245, 247, 247);
+background-color: rgb(241, 127, 45);
+}
+
+.burger-container .buttons {
+grid-column: span 4;
+} 
+.burger-container .ingidients{
+grid-column: span 3;
+width: 300px;
+padding: 70px;
+}
+
+table.buttons-table{
+  padding: 10%;
+  text-align: center; 
+  display: flex;
+flex-direction: column;
+grid-column: span 4;
+}
+
+ button.buttons-table{
+  grid-column: span 2;
+ border-radius: 150px;
+ color: white;
+ border: none;
+ font-size: 1rem;
+ text-align: center;
+ inline-size: 20px;
+ block-size: 20px;
+}
+button.buttons-table:hover{
+  background-color: rgb(244, 221, 150);
+  color: black;
+}
+img.buttons-table{
+  grid-column: span 2;
+  width: 60%;
+}
+img.buttons-table:hover{
+  width: 90%; 
+}
+#PaymentDetailsId, #lettuceId, #eggId, #onionId{
+  font-size: 12px;
+  font-style: italic;
+}
+.buttonPaymentDetails{
+  font-style: italic;
+  font-size: 20px;
+  border-radius: 5px;
+  border-style: dotted;
+}
+.buttonPaymentDetails:hover{
+background-color: rgb(244, 221, 150);
+color: black;
+}
